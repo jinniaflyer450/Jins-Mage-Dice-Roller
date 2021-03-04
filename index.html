@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mage Roller!</title>
+    <link rel = "stylesheet" href = "mage_roller.css">
+</head>
+<body>
+    <h1>Mage Dice Roller!</h1>
+    <h2>Purpose:</h2>
+    <p>This is a dice roller for Mage: the Ascension 20th Edition.</p>
+    <h2>Instructions:</h2>
+    <p>Enter your character's total pool and the target difficulty of the roll into the labeled text inputs, then press the button to roll.</p>
+    <h2>The Roller:</h2>
+    <form>
+        <label>Total dice in pool--sum the relevant attribute and skill with any relevant modifiers.
+            <input placeholder = "Enter pool." id = "total-pool" type = "number">
+        </label>
+        <label> Target difficulty--to get a success on a die, roll higher than this number, usually set by the Storyteller.
+            <input placeholder = "Enter target difficulty." id = "difficulty" type = "number">
+        </label>
+        <button>Roll!</button>
+        <div id = "roll-results"></div>
+</form>
+    
+    <script src = "mage_roller.js"></script>
+</body>
+</html>
